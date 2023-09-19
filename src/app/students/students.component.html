@@ -1,0 +1,38 @@
+<h4>Группа № {{ newGroupNumber }}</h4>
+
+<table mat-table [dataSource]="dataSource" matSort>
+  <!-- Дата принятия -->
+  <ng-container matColumnDef="dateOfAdmission">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header>Дата принятия</th>
+    <td mat-cell *matCellDef="let student">{{ student.dateOfAdmission }}</td>
+  </ng-container>
+
+  <!-- ФИО студента -->
+  <ng-container matColumnDef="fullName">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header>ФИО студента</th>
+    <td mat-cell *matCellDef="let student">{{ student.fullName }}</td>
+  </ng-container>
+
+  <!-- Действия -->
+  <ng-container matColumnDef="actions">
+    <th mat-header-cell *matHeaderCellDef>Действия</th>
+    <td mat-cell *matCellDef="let student" class="center-cell">
+      <button (click)="deleteStudent(student)">Удалить</button>
+    </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+</table>
+
+<div class="addNewStudent">
+  <div container>
+    <input [(ngModel)]="newStudent.fullName" placeholder="ФИО студента" />
+  </div>
+  <div class="btnNewStudent">
+    <button (click)="addNewStudent()">Добавить нового студента</button>
+  </div>
+  <div class="returnToGroups">
+    <button (click)="goToGroups()">Вернуться к списку групп</button>
+  </div>
+</div>

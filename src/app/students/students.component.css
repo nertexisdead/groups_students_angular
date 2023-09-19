@@ -1,0 +1,50 @@
+* {
+  padding: 10px;
+  margin: 0px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+.mdc-data-table__table {
+  min-width: 60%;
+  border: 2px;
+  white-space: nowrap;
+  border-spacing: 10;
+  table-layout: fixed;
+}
+
+/* Добавление границ к таблице */
+table {
+  border-collapse: collapse;
+  width: 40%;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Стили для заголовков таблицы */
+th {
+  background-color: #f0f0f0;
+}
+
+/* Стили для элементов внутри боковой панели */
+.addNewStudent {
+  margin-top: 20px;
+}
+
+button {
+  height: 50px;
+  width: 185.6px;
+}
+
+.center-cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

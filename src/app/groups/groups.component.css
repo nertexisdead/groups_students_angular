@@ -1,0 +1,53 @@
+* {
+    padding: 10px;
+    margin: 0px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+.mdc-data-table__table {
+    min-width: 60%;
+    border: 2px;
+    white-space: nowrap;
+    border-spacing: 10;
+    table-layout: fixed;
+}
+
+/* Добавление границ к таблице */
+table {
+    border-collapse: collapse;
+    width: 40%;
+    text-align: center;
+  }
+  
+  th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  /* Стили для заголовков таблицы */
+  th {
+    background-color: #f0f0f0;
+  }
+  
+  
+  /* Стили для кнопки "Добавить новую группу" */
+.addNewGroup {
+    margin-top: 10px;
+  }
+  
+.addNewGroup button {
+    padding: 8px;
+    width: 185.4px;
+  }
+
+  .center-cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
